@@ -1,0 +1,274 @@
+@font-face {
+  font-family: Product-Sans-Bold;
+  src: url("../fonts/product-sans/Product-Sans-Bold.ttf");
+}
+@font-face {
+  font-family: Product-Sans-Bold-Italic;
+  src: url("../fonts/product-sans/Product-Sans-Bold-Italic.ttf");
+}
+@font-face {
+  font-family: Product-Sans-Italic;
+  src: url("../fonts/product-sans/Product-Sans-Italic.ttf");
+}
+@font-face {
+  font-family: Product-Sans-Regular;
+  src: url("../fonts/product-sans/Product-Sans-Regular.ttf");
+}
+
+body {
+  font-family: Product Sans, Arial, Helvetica, sans-serif !important;
+  background-color: #f6f8fa !important;
+}
+
+*:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar {
+  color: #fff;
+  background-color: #06274f;
+  justify-content: space-between !important;
+  padding: 1rem !important;
+}
+
+.navbar .navbar-brand img {
+  height: 40px;
+}
+
+.navbar .input-group {
+  width: 20rem;
+}
+
+.navbar .input-group input,
+.navbar .input-group button {
+  border-radius: 50px !important;
+}
+
+.navbar .input-group button {
+  margin-left: -45px;
+  z-index: 3 !important;
+  background: transparent;
+  color: #06274f;
+  border: 0px;
+}
+
+.navbar .input-group button:focus {
+  color: #06274f;
+  background: transparent !important;
+}
+
+.navbar .login-btn {
+  margin: auto auto auto 15px;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #f8c93e;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.navbar .login-btn:hover {
+  cursor: pointer;
+}
+
+.navbar .login-btn:active {
+  border: 1px solid #f2f2f2;
+}
+
+.navbar .search-login {
+  display: flex;
+}
+
+.navbar .profile img {
+  border-radius: 50px;
+  height: 40px;
+  border: 1px solid #f8c93e;
+}
+
+.navbar .profile .nav-link {
+  color: #f2f2f2;
+  padding: 0rem 1rem !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #ffffff !important;
+  cursor: pointer;
+}
+/* REACT TAGS INPUT */
+.react-tagsinput {
+  background-color: #fff;
+  border: 1px solid rgb(238, 238, 238);
+  overflow: hidden;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.react-tagsinput--focused {
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.react-tagsinput-tag {
+  background-color: #f6f8fa;
+  border-radius: 2px;
+  border: 1px solid 0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  color: #838b91;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.react-tagsinput-remove {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.react-tagsinput-tag a::before {
+  content: " ×";
+}
+
+.react-tagsinput-input {
+  background: transparent;
+  border: 0;
+  color: #777;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  margin-top: 1px;
+  outline: none;
+  padding: 5px;
+  width: 80px;
+}
+/* ------------------------------------------- */
+
+.header {
+  margin: 25px auto 20px auto;
+  text-align: center;
+  color: #626468;
+  width: fit-content;
+}
+
+/* ------------------------------------------- */
+
+.showcase {
+}
+
+.showcase a {
+  color: #06274f;
+  text-decoration: none;
+}
+.showcase .card {
+  width: 31.33%;
+  float: left;
+  margin: 10px 10px;
+}
+
+.showcase .card-img {
+  object-fit: cover;
+  max-height: 190px;
+  min-height: 190px;
+}
+
+.showcase .card-title {
+  margin-bottom: 0px !important;
+  font-size: 1rem !important;
+}
+
+/* ------------------------------------------- */
+
+.gallery .ReactGridGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .ReactGridGallery .tile {
+  height: 170px;
+  width: 300px;
+}
+.gallery .ReactGridGallery .tile-viewport {
+  height: inherit !important;
+  margin: 0 !important;
+}
+
+.gallery .ReactGridGallery .tile img {
+  height: 100% !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gallery .header {
+  width: 100% !important;
+}
+.gallery .navbar {
+  background-color: #f6f8fa !important;
+  padding: 0.5rem 0px !important;
+}
+
+.gallery .navbar li {
+  list-style: none !important;
+  color: #737b83;
+}
+.gallery .tile-bottom-bar {
+  display: none;
+}
+
+.gallery .direction:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.gallery .header .options {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .header .options h3 {
+  border-bottom: 5px solid #f8c93e;
+  width: 7%;
+}
+
+.gallery .header .options i:hover {
+  cursor: pointer;
+  color: #4285f4;
+}
+
+@media only screen and (max-width: 600px) {
+  .showcase .card {
+    width: 100%;
+    margin: 10px 0px !important;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+
+  .search-login form {
+    width: 100%;
+  }
+  .navbar form {
+    width: 90%;
+  }
+
+  .navbar .search-login {
+    width: 100%;
+  }
+
+  .navbar .input-group {
+    width: 100%;
+  }
+}
