@@ -1,13 +1,5 @@
 {
-  "version": 1,
-  "type": "npm",
+  "version": 2,
   "name": "flickr",
-  "alias": "flickr",
-  "dotenv": true,
-  "scale": {
-    "sfo1": {
-      "min": 1,
-      "max": "auto"
-    }
-  }
+  "alias": "flickr"
 }

@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 app.disable("x-powered-by");
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.get("/", (req, res) => res.send("assets"));
 app.use("/", router);
 
 app.listen(PORT, console.log("> Listening"));
