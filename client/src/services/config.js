@@ -1,5 +1,5 @@
 const config = {
-  API_URL: "http://285b77bc.ngrok.io"
+  API_URL: "https://assets.cis.fiu.edu/api"
 };
 
 export default config;
